@@ -84,7 +84,9 @@ The MCP server is version-agnostic (ROS1 or ROS2) and works with any MCP-compati
 
 Follow the [installation guide](docs/installation.md) for step-by-step instructions to install, run, and troubleshoot the ROS-MCP server.  
 
-For developers, we also have instructions for [installation from source](docs/installation-from-source.md). 
+For developers, we also have instructions for [installation from source](docs/installation-from-source.md).
+
+**Certificate-bundle update (October 2026):** See the [security scope, offline checks, and rollout notes](docs/research-certificate-bundle.md). Updating this source does not update existing installations or secure plain rosbridge WebSocket connections.
 
 If you prefer not to use desktop LLM apps (such as Claude, ChatGPT, or Gemini), you can use the [robot-mcp-client](https://github.com/robotmcp/robot-mcp-client) to run and interact with the MCP server directly from the terminal. 
 

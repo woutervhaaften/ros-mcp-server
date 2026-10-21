@@ -14,6 +14,8 @@ authors = [
 
 
 dependencies = [
+    # Security floor for the October 2026 certificate-bundle update.
+    "certifi>=2026.10.19",
     "fastmcp>=2.11.3",
     "jsonschema>=4.25.1",
     "mcp[cli]>=1.13.0",
@@ -45,6 +47,10 @@ robot_specifications = ["*.yaml"]
 
 [tool.setuptools.data-files]
 "." = ["server.json"]
+
+# The lockfile and installer trust update are validated with uv 0.13.4+.
+[tool.uv]
+required-version = ">=0.13.4"
 
 # ---------------- Ruff configuration ----------------
 [tool.ruff]
