@@ -16,6 +16,13 @@ Note the **absolute path** to the cloned directory — you'll need this later wh
 
 ## 2. Install UV (Python Virtual Environment Manager)
 
+Use **uv 0.13.4 or newer**. This requirement is enforced by `tool.uv.required-version`
+in `pyproject.toml`; older installations must be upgraded before syncing the
+revision-5 lockfile. This also establishes the installer security floor described
+in the [certificate-bundle notes](research-certificate-bundle.md).
+Check `uv --version` before proceeding. Installing current uv using either method
+below satisfies the minimum; no global upgrade is performed automatically by this project.
+
 You can install [`uv`](https://github.com/astral-sh/uv) using one of the following methods:
 
 <details>
@@ -31,7 +38,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 <summary><strong>Option B: Using pip</strong></summary>
 
 ```bash
-pip install uv
+pip install --upgrade "uv>=0.13.4"
 ```
 
 </details>
